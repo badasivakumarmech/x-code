@@ -1,0 +1,134 @@
+GET http://localhost:4010/
+###
+POST http://localhost:4010/UserRegister
+Content-Type: application/json
+
+{
+    "UserEmail": "siva@gmail.com", 
+    "UserPassword": "Siva@123"
+}
+
+
+###
+POST http://localhost:4010/Userlogin
+Content-Type: application/json
+
+
+{
+      "UserEmail":"siva@gmail.com",
+       "UserPassword":"Siva@123"
+}
+###
+POST http://localhost:4010/AddInstitute
+Content-Type: application/json
+
+{
+     
+    "InstituteName": "Sathya",
+    "HeadName": "Ravi Kumar",
+    "PrimaryEmail": "Sathya@gmail.com",
+    "PrimaryContactNumber": "9541257878",
+    "SecondaryEmail": "Sathya@gmail.com",
+    "SecondaryContactNumber": "8547854785",
+    "BatchYear": "2012",
+    "SelectBatch": "M-Batch",
+    "Address": "Vijayawada",
+    "City": "Vijayawada",
+    "InstituteCode": "9657",
+    "InstituteType": "College",
+    "AxiosPlans": "LMS",
+    "Password": "Sathya@1234"
+}
+###
+GET http://localhost:4010/allAddInstitutes
+
+###
+PUT http://localhost:4010/UpdateInstitute/653206c6d8ebb8e565808b4b
+Content-Type: application/json
+ 
+ {
+     "InstituteName": "Upendra",
+    "HeadName": "kishore",
+    "PrimaryEmail": "Upendra@gmail.com",
+    "PrimaryContactNumber": "9658745874",
+    "SecondaryEmail": "ashok@gmail.com",
+    "SecondaryContactNumber": "8547854785",
+    "Address": "Guntur",
+    "City": "Guntur",
+    "InstituteCode": "2569",
+    "InstituteType": "College",
+    "AxiosPlans": "LMS",
+    "Password": "Muni@1234"
+ }
+ 
+###
+DELETE http://localhost:4010/deleteInstitute/652f7fe1e5bbc63a72e0c434
+
+###
+GET http://localhost:4010/individualInstitute/653206c6d8ebb8e565808b4b
+###
+POST http://localhost:4010/AddUsers
+Content-Type: application/json
+
+{ 
+    "Regdid": "74RG9658",
+    "FirstName": "Charan",
+    "LastName": "Kumar",
+    "userEmail": "Charan@gmail.com",
+    "userNumber": "8547856985",
+    "BatchYear": "2022",
+    "SelectBatch": "K-Batch",
+    "InstituteType": "government Office",
+    "AxiosPlans": "LMS",
+    "Password": "Charan@1234",
+    "Status": "Active",
+    "ExpiryDate": "09-11-2028"
+}
+###
+
+GET http://localhost:4010/allUsersData
+###
+GET http://localhost:4010/individualUser/6540d596fce6aaff86b3a0f4
+
+###
+POST http://localhost:4010/ByBatchData
+Content-Type: application/json
+
+{ 
+    
+    "BatchYear": "2022",
+    "SelectBatch": "K-Batch",
+    "InstituteType": "government-Office",
+    "AxiosPlans": "3 Months"
+  
+}
+###
+POST http://localhost:4010/ByListData
+Content-Type: application/json
+
+{ 
+    
+    "aboveData": "mail",
+    "institutionpara": "a combining form meaning “guard against,” occurring in loanwords from French, or, via French, from Italian: parachute; parasol.",
+    "InstituteType": "government Office",
+    "AxiosPlans": "9 Months"
+  
+}
+###
+PUT http://localhost:4010/ByBatchData/Corporate-Office
+Content-Type: application/json
+
+{
+
+      "BatchYear": "9654",
+    "SelectBatch": "P-Batch",
+    "AxiosPlans": "888888 Months"
+
+}
+
+
+ 
+
+
+ 
+
